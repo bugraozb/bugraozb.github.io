@@ -105,6 +105,23 @@
         color: #000;
       }
 
+      .social {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .social a {
+        color: var(--fg);
+        font-size: 1.5rem;
+        transition: color 0.2s;
+      }
+
+      .social a:hover {
+        color: var(--accent);
+      }
+
       footer {
         text-align: center;
         font-size: 0.9rem;
@@ -112,6 +129,10 @@
         color: #777;
       }
     </style>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -157,13 +178,28 @@
     <section id="iletisim">
       <h2>İletişim</h2>
       <ul>
-        <li>E-posta: bugraozbilgin@gmail.com</li>
+        <li>E-posta: bugraozb@outlook.com</li>
         <li>
           <a href="https://github.com/bugraozb" target="_blank"
             >GitHub Profilim</a
           >
         </li>
       </ul>
+
+      <div class="social">
+        <a href="https://x.com/bugraozb" target="_blank"
+          ><i class="fab fa-x-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/bugraozb/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.reddit.com/user/bugraozb0/" target="_blank"
+          ><i class="fab fa-reddit"></i
+        ></a>
+        <a href="https://linkedin.com/in/bugraozb" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
     </section>
 
     <footer>
