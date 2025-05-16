@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buğra Özbilgin - Kişisel Portföy</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+        --bg: #121212;
+        --fg: #e0e0e0;
+        --accent: #64ffda;
+        --card-bg: #1e1e1e;
+        --hover: #333;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: var(--bg);
+        color: var(--fg);
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: var(--card-bg);
+        padding: 2rem;
+        text-align: center;
+        border-bottom: 1px solid var(--hover);
+      }
+
+      header h1 {
+        font-size: 2rem;
+        color: var(--accent);
+      }
+
+      header p {
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+        color: #aaa;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: var(--fg);
+        transition: color 0.2s;
+      }
+
+      nav a:hover {
+        color: var(--accent);
+      }
+
+      section {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      h2 {
+        border-left: 4px solid var(--accent);
+        padding-left: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .proje {
+        background: var(--card-bg);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 0 10px #0003;
+      }
+
+      .proje h3 {
+        color: var(--accent);
+        margin-bottom: 0.5rem;
+      }
+
+      .proje a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+        color: var(--fg);
+        background: var(--hover);
+        padding: 0.3rem 0.7rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .proje a:hover {
+        background: var(--accent);
+        color: #000;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 2rem;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Buğra Özbilgin</h1>
+      <p>Full Stack Developer Adayı</p>
+      <nav>
+        <ul>
+          <li><a href="#hakkimda">Hakkımda</a></li>
+          <li><a href="#projeler">Projeler</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hakkimda">
+      <h2>Hakkımda</h2>
+      <p>
+        Ankara Bilim Üniversitesi’nde Bilgisayar Programcılığı birinci sınıf
+        öğrencisiyim. Küçüklükten beri bilgisayarlarla iç içeyim, 3-4 yıldır da
+        yazılıma ilgi duyuyorum. Full Stack Developer olma hedefiyle HTML, CSS,
+        JavaScript, Java, Python, PHP ve SQL üzerine çalışıyorum. Problemlere
+        yaratıcı ve hızlı çözümler bulmayı seviyorum.
+      </p>
+    </section>
+
+    <section id="projeler">
+      <h2>Projeler</h2>
+      <div class="proje">
+        <h3>Spyfall (Türkçe)</h3>
+        <p>
+          Tarayıcı üzerinden oynanabilen, 100 özgün mekanlı Türkçe Spyfall
+          oyunu.
+        </p>
+        <a
+          href="https://github.com/KULLANICIADIN/spyfall-turkce"
+          target="_blank"
+          >GitHub</a
+        >
+        <a
+          href="https://KULLANICIADIN.github.io/spyfall-turkce/"
+          target="_blank"
+          >Canlı Demo</a
+        >
+      </div>
+    </section>
+
+    <section id="iletisim">
+      <h2>İletişim</h2>
+      <ul>
+        <li>E-posta: bugraozbilgin@gmail.com</li>
+        <li>
+          <a href="https://github.com/KULLANICIADIN" target="_blank"
+            >GitHub Profilim</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2025 Buğra Özbilgin</p>
+    </footer>
+  </body>
+</html>
